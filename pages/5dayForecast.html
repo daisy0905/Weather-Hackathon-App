@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5dayForecast</title>
+    <link rel="stylesheet" href="../css/5dayForecast.css">
+</head>
+<body>
+    <div id="city-container">
+        <h1>5 day weather forecast</h1>
+        <h2 id="selectedCity"></h2>
+        <p id="getData">Weather Information</p>
+        <div id="weatherData">
+            <div id="period1">
+                <p id="time0"></p>
+                <p id="description0"></p>
+                <p id="temp-max0"></p>
+                <p id="temp-min0"></p>
+                <p id="wind-speed0"></p>
+                <p id="humidity0"></p>
+            </div>
+            <div id="period2">
+                <p id="time1"></p>
+                <p id="description1"></p>
+                <p id="temp-max1"></p>
+                <p id="temp-min1"></p>
+                <p id="wind-speed1"></p>
+                <p id="humidity1"></p>
+            </div>
+            <div id="period3">
+                <p id="time2"></p>
+                <p id="description2"></p>
+                <p id="temp-max2"></p>
+                <p id="temp-min2"></p>
+                <p id="wind-speed2"></p>
+                <p id="humidity2"></p>
+            </div>
+            <div id="period4">
+                <p id="time3"></p>
+                <p id="description3"></p>
+                <p id="temp-max3"></p>
+                <p id="temp-min3"></p>
+                <p id="wind-speed3"></p>
+                <p id="humidity3"></p>
+            </div>
+            <div id="period5">
+                <p id="time4"></p>
+                <p id="description4"></p>
+                <p id="temp-max4"></p>
+                <p id="temp-min4"></p>
+                <p id="wind-speed4"></p>
+                <p id="humidity4"></p>
+            </div>
+            <div id="period6">
+                <p id="time5"></p>
+                <p id="description5"></p>
+                <p id="temp-max5"></p>
+                <p id="temp-min5"></p>
+                <p id="wind-speed5"></p>
+                <p id="humidity5"></p>
+            </div>
+            <div id="period7">
+                <p id="time6"></p>
+                <p id="description6"></p>
+                <p id="temp-max6"></p>
+                <p id="temp-min6"></p>
+                <p id="wind-speed6"></p>
+                <p id="humidity6"></p>
+            </div>
+            <div id="period8">
+                <p id="time7"></p>
+                <p id="description7"></p>
+                <p id="temp-max7"></p>
+                <p id="temp-min7"></p>
+                <p id="wind-speed7"></p>
+                <p id="humidity7"></p>
+            </div>
+            <div id="period9">
+                <p id="time8"></p>
+                <p id="description8"></p>
+                <p id="temp-max8"></p>
+                <p id="temp-min8"></p>
+                <p id="wind-speed8"></p>
+                <p id="humidity8"></p>
+            </div>
+            <div id="period10">
+                <p id="time9"></p>
+                <p id="description9"></p>
+                <p id="temp-max9"></p>
+                <p id="temp-min9"></p>
+                <p id="wind-speed9"></p>
+                <p id="humidity9"></p>
+            </div>
+            <div id="period11">
+                <p id="time10"></p>
+                <p id="description10"></p>
+                <p id="temp-max10"></p>
+                <p id="temp-min10"></p>
+                <p id="wind-speed10"></p>
+                <p id="humidity10"></p>
+            </div>
+            <div id="period12">
+                <p id="time11"></p>
+                <p id="description11"></p>
+                <p id="temp-max11"></p>
+                <p id="temp-min11"></p>
+                <p id="wind-speed11"></p>
+                <p id="humidity11"></p>
+            </div>
+            <div id="period13">
+                <p id="time12"></p>
+                <p id="description12"></p>
+                <p id="temp-max12"></p>
+                <p id="temp-min12"></p>
+                <p id="wind-speed12"></p>
+                <p id="humidity12"></p>
+            </div>
+            <div id="period14">
+                <p id="time13"></p>
+                <p id="description13"></p>
+                <p id="temp-max13"></p>
+                <p id="temp-min13"></p>
+                <p id="wind-speed13"></p>
+                <p id="humidity13"></p>
+            </div>
+            <div id="period15">
+                <p id="time14"></p>
+                <p id="description14"></p>
+                <p id="temp-max14"></p>
+                <p id="temp-min14"></p>
+                <p id="wind-speed14"></p>
+                <p id="humidity14"></p>
+            </div>
+            <div id="period16">
+                <p id="time15"></p>
+                <p id="description15"></p>
+                <p id="temp-max15"></p>
+                <p id="temp-min15"></p>
+                <p id="wind-speed15"></p>
+                <p id="humidity15"></p>
+            </div>
+            <div id="period17">
+                <p id="time16"></p>
+                <p id="description16"></p>
+                <p id="temp-max16"></p>
+                <p id="temp-min16"></p>
+                <p id="wind-speed16"></p>
+                <p id="humidity16"></p>
+            </div>
+            <div id="period18">
+                <p id="time17"></p>
+                <p id="description17"></p>
+                <p id="temp-max17"></p>
+                <p id="temp-min17"></p>
+                <p id="wind-speed17"></p>
+                <p id="humidity17"></p>
+            </div>
+            <div id="period19">
+                <p id="time18"></p>
+                <p id="description18"></p>
+                <p id="temp-max18"></p>
+                <p id="temp-min18"></p>
+                <p id="wind-speed18"></p>
+                <p id="humidity18"></p>
+            </div>
+            <div id="period20">
+                <p id="time19"></p>
+                <p id="description19"></p>
+                <p id="temp-max19"></p>
+                <p id="temp-min19"></p>
+                <p id="wind-speed19"></p>
+                <p id="humidity19"></p>
+            </div>
+            <div id="period21">
+                <p id="time20"></p>
+                <p id="description20"></p>
+                <p id="temp-max20"></p>
+                <p id="temp-min20"></p>
+                <p id="wind-speed20"></p>
+                <p id="humidity20"></p>
+            </div>
+            <div id="period22">
+                <p id="time21"></p>
+                <p id="description21"></p>
+                <p id="temp-max21"></p>
+                <p id="temp-min21"></p>
+                <p id="wind-speed21"></p>
+                <p id="humidity21"></p>
+            </div>
+            <div id="period23">
+                <p id="time22"></p>
+                <p id="description22"></p>
+                <p id="temp-max22"></p>
+                <p id="temp-min22"></p>
+                <p id="wind-speed22"></p>
+                <p id="humidity22"></p>
+            </div>
+            <div id="period24">
+                <p id="time23"></p>
+                <p id="description23"></p>
+                <p id="temp-max23"></p>
+                <p id="temp-min23"></p>
+                <p id="wind-speed23"></p>
+                <p id="humidity23"></p>
+            </div>
+            <div id="period25"></div>
+                <p id="time24"></p>
+                <p id="description24"></p>
+                <p id="temp-max24"></p>
+                <p id="temp-min24"></p>
+                <p id="wind-speed24"></p>
+                <p id="humidity24"></p>
+            </div>
+            <div id="period25"></div>
+                <p id="time25"></p>
+                <p id="description25"></p>
+                <p id="temp-max25"></p>
+                <p id="temp-min25"></p>
+                <p id="wind-speed25"></p>
+                <p id="humidity25"></p>
+            </div>
+            <div id="period27"></div>
+                <p id="time26"></p>
+                <p id="description26"></p>
+                <p id="temp-max26"></p>
+                <p id="temp-min26"></p>
+                <p id="wind-speed26"></p>
+                <p id="humidity26"></p>
+            </div>
+            <div id="period28"></div>
+                <p id="time27"></p>
+                <p id="description27"></p>
+                <p id="temp-max27"></p>
+                <p id="temp-min27"></p>
+                <p id="wind-speed27"></p>
+                <p id="humidity27"></p>
+            </div>
+            <div id="period29"></div>
+                <p id="time28"></p>
+                <p id="description28"></p>
+                <p id="temp-max28"></p>
+                <p id="temp-min28"></p>
+                <p id="wind-speed28"></p>
+                <p id="humidity28"></p>
+            </div>
+            <div id="period30"></div>
+                <p id="time29"></p>
+                <p id="description29"></p>
+                <p id="temp-max29"></p>
+                <p id="temp-min29"></p>
+                <p id="wind-speed29"></p>
+                <p id="humidity29"></p>
+            </div>
+            <div id="period31"></div>
+                <p id="time30"></p>
+                <p id="description30"></p>
+                <p id="temp-max30"></p>
+                <p id="temp-min30"></p>
+                <p id="wind-speed30"></p>
+                <p id="humidity30"></p>
+            </div>
+            <div id="period32"></div>
+                <p id="time31"></p>
+                <p id="description31"></p>
+                <p id="temp-max31"></p>
+                <p id="temp-min31"></p>
+                <p id="wind-speed31"></p>
+                <p id="humidity31"></p>
+            </div>
+            <div id="period33"></div>
+                <p id="time32"></p>
+                <p id="description32"></p>
+                <p id="temp-max32"></p>
+                <p id="temp-min32"></p>
+                <p id="wind-speed32"></p>
+                <p id="humidity32"></p>
+            </div>
+            <div id="period34"></div>
+                <p id="time33"></p>
+                <p id="description33"></p>
+                <p id="temp-max33"></p>
+                <p id="temp-min33"></p>
+                <p id="wind-speed33"></p>
+                <p id="humidity33"></p>
+            </div>
+            <div id="period35"></div>
+                <p id="time34"></p>
+                <p id="description34"></p>
+                <p id="temp-max34"></p>
+                <p id="temp-min34"></p>
+                <p id="wind-speed34"></p>
+                <p id="humidity34"></p>
+            </div>
+            <div id="period36"></div>
+                <p id="time35"></p>
+                <p id="description35"></p>
+                <p id="temp-max35"></p>
+                <p id="temp-min35"></p>
+                <p id="wind-speed35"></p>
+                <p id="humidity35"></p>
+            </div>
+            <div id="period37"></div>
+                <p id="time36"></p>
+                <p id="description36"></p>
+                <p id="temp-max36"></p>
+                <p id="temp-min36"></p>
+                <p id="wind-speed36"></p>
+                <p id="humidity36"></p>
+            </div>
+            <div id="period38"></div>
+                <p id="time37"></p>
+                <p id="description37"></p>
+                <p id="temp-max37"></p>
+                <p id="temp-min37"></p>
+                <p id="wind-speed37"></p>
+                <p id="humidity37"></p>
+            </div>
+            <div id="period39"></div>
+                <p id="time38"></p>
+                <p id="description38"></p>
+                <p id="temp-max38"></p>
+                <p id="temp-min38"></p>
+                <p id="wind-speed38"></p>
+                <p id="humidity38"></p>
+            </div>
+            <div id="period40"></div>
+                <p id="time39"></p>
+                <p id="description39"></p>
+                <p id="temp-max39"></p>
+                <p id="temp-min39"></p>
+                <p id="wind-speed39"></p>
+                <p id="humidity39"></p>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="../js/5dayForecast.js"></script>
+</body>
+</html>

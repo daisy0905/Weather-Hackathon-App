@@ -14,11 +14,18 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRwuDFExQp2c6AS-z1G2aUCO_FGTJt1zFTm1A&usqp=CAU");
+  background-size: cover;
+  background-position: center;
+}
+
+#spacer1 {
+  height: 25vh;
 }
 
 #city-selection {
   width: 100%;
-  min-height: 10vh;
+  height: 30vh;
   display: -ms-grid;
   display: grid;
   justify-items: center;
@@ -33,126 +40,54 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   text-align: center;
+  font-size: 2rem;
 }
 
-#city-selection option {
+#city-selection #cities {
+  width: 40%;
+  padding: 0.5em;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  font-size: 1.2rem;
 }
 
 #city-selection #submit {
   margin-top: 0.4em;
-  padding: 0.2em;
-  border-radius: 1em;
+  padding: 0.6em;
+  border-radius: 0.5em;
   background-color: lightgray;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  font-size: 1rem;
 }
 
-#header {
-  width: 100%;
-  min-height: 15vh;
-  display: -ms-grid;
-  display: grid;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  row-gap: 1vh;
-}
-
-#header #city {
-  width: 80%;
-  display: -ms-grid;
-  display: grid;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  padding: 1em 0 1em 0;
-}
-
-#header #city h2 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  text-align: center;
-}
-
-#header #city p {
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  color: grey;
-}
-
-#header #city #description {
-  color: orange;
-}
-
-#header #weather {
-  width: 80%;
-  display: -ms-grid;
-  display: grid;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 1em 0 1em 0;
-}
-
-#header #weather #temp {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  text-align: center;
-  font-size: 2rem;
-}
-
-#header #weather #feels-like {
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  color: grey;
-}
-
-#city-photo {
-  width: 70%;
-  height: auto;
-}
-
-#additional-info {
+#page-link {
   height: 5vh;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  text-align: center;
-  font-size: 1rem;
-  margin: 1em 0 1em 0;
-}
-
-#weather-data {
-  width: 80%;
-  height: 10vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: lightgrey;
 }
 
-#weather-data .text {
+#page-link #current-weather {
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  text-align: center;
-  font-size: 0.5rem;
+  text-align: left;
+  font-size: 1.2rem;
+  color: white;
 }
 
-#weather-data .data {
+#page-link #forecast {
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  text-align: center;
-  font-size: 1rem;
+  text-align: right;
+  font-size: 1.2rem;
+  color: white;
+}
+
+#spacer2 {
+  height: 40vh;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,158 @@
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100%;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#city-selection {
+  width: 100%;
+  min-height: 10vh;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1em 2em 1em 2em;
+  row-gap: 0.5vh;
+}
+
+#city-selection label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+#city-selection option {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+#city-selection #submit {
+  margin-top: 0.4em;
+  padding: 0.2em;
+  border-radius: 1em;
+  background-color: lightgray;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+#header {
+  width: 100%;
+  min-height: 15vh;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 1vh;
+}
+
+#header #city {
+  width: 80%;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 1em 0 1em 0;
+}
+
+#header #city h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+#header #city p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: grey;
+}
+
+#header #city #description {
+  color: orange;
+}
+
+#header #weather {
+  width: 80%;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em 0 1em 0;
+}
+
+#header #weather #temp {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#header #weather #feels-like {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: grey;
+}
+
+#city-photo {
+  width: 70%;
+  height: auto;
+}
+
+#additional-info {
+  height: 5vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1rem;
+  margin: 1em 0 1em 0;
+}
+
+#weather-data {
+  width: 80%;
+  height: 10vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: lightgrey;
+}
+
+#weather-data .text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 0.5rem;
+}
+
+#weather-data .data {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1rem;
+}
+/*# sourceMappingURL=currentWeather.css.map */
